@@ -6,18 +6,25 @@ import CheckboxSection from './components/molecules/checkboxSection/CheckboxSect
 
 const category = ['fisk', 'eple'];
 
+
 class App extends React.Component{
   constructor(props) {
     super(props);
     this.state = {selected: null};
   }
+
+  setSelected(sel){
+    this.setState(({selected: sel}))
+  };
+
   render(){
   return (
     <div>
       <header>
         <p>This will be the main page where everything will be placed.</p>
       </header>
-      <CheckboxSection category={category}/>
+      <p>Example of react radio buttons:</p>
+      <CheckboxSection category={category} setSelected={this.setSelected.bind(this)} selected={this.state.selected}/>
     </div>
   );
   }
