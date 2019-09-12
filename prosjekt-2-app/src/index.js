@@ -5,6 +5,7 @@ import * as serviceWorker from './serviceWorker';
 // import CheckboxSection from './components/molecules/checkboxSection/CheckboxSection'
 import MainPage from './components/organisms/MainPage/MainPage'
 const category = ['fisk', 'eple'];
+const mediaCategories = [{ type: 'Bilde', categories: ['Minimalistisk', 'Naturlig', 'Abstrakt']},{ type: 'Lyd', categories: ['Opphold', 'Regn', 'Storm']}, { type: 'Tekst', categories: ['Dikt', 'Haiku', 'Sangtekst']} ]
 
 
 class App extends React.Component{
@@ -24,7 +25,7 @@ class App extends React.Component{
   render(){
   return (
     <div>
-      <MainPage category={category} setSelectedTab={this.setSelectedTab.bind(this)} selectedTab={this.state.selectedTab} />
+      <MainPage mediaCategories={mediaCategories} category={category} setSelectedTab={this.setSelectedTab.bind(this)} selectedTab={this.state.selectedTab} />
     </div>
   );
   }
