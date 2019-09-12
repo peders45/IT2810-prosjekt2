@@ -1,0 +1,23 @@
+<svg width="580" height="400" xmlns="http://www.w3.org/2000/svg">
+ <!-- Created with Method Draw - http://github.com/duopixel/Method-Draw/ -->
+ <g>
+  <title>background</title>
+  <rect fill="#fff" id="canvas_background" height="402" width="582" y="-1" x="-1"/>
+ </g>
+ <g>
+  <title>Layer 1</title>
+  <rect id="svg_22" height="406" width="590" y="-1.21875" x="-3.5" stroke-width="4" stroke="#000000" fill="#6D97AB"/>
+  <line stroke="#FFFA8D" stroke-dasharray="5,5" stroke-linecap="null" stroke-linejoin="null" id="svg_21" y2="188.781246" x2="476.500004" y1="397.78125" x1="386.5" stroke-width="4" fill="none"/>
+  <rect id="svg_12" height="435" width="183" y="11.78125" x="90.5" stroke-width="1.5" stroke="#000000" fill="#396849"/>
+  <rect id="svg_6" height="245" width="61" y="26.78125" x="355.5" stroke-width="1.5" stroke="#000000" fill="#46673D"/>
+  <rect id="svg_10" height="183" width="137" y="147.78125" x="245.5" stroke-width="1.5" stroke="#000000" fill="#729C62"/>
+  <rect id="svg_1" height="400" width="81" y="35.78125" x="26.5" stroke-width="1.5" stroke="#000000" fill="#D1FFB4"/>
+  <rect id="svg_2" height="341" width="164" y="108.78125" x="152.5" stroke-width="1.5" stroke="#000000" fill="#619E73"/>
+  <line stroke-linecap="null" stroke-linejoin="null" id="svg_3" y2="162.78125" x2="487.5" y1="410.78125" x1="333.5" stroke-width="5" stroke="#444444" fill="none"/>
+  <line stroke-linecap="null" stroke-linejoin="null" id="svg_4" y2="231.78125" x2="619.5" y1="232.78125" x1="618.5" stroke-width="1.5" stroke="#9A8AAB" fill="none"/>
+  <line stroke-linecap="null" stroke-linejoin="null" id="svg_5" y2="423.78125" x2="429.5" y1="162.78125" x1="485.5" stroke-width="5" stroke="#444444" fill="none"/>
+  <rect id="svg_7" height="162" width="37" y="20.78125" x="440.5" stroke-width="1.5" stroke="#000000" fill="#729C62"/>
+  <rect id="svg_8" height="360" width="173" y="68.78125" x="481.5" stroke-width="1.5" stroke="#000000" fill="#A0D58A"/>
+  <line stroke-linecap="null" stroke-linejoin="null" id="svg_15" y2="432.78125" x2="365.5" y1="406.78125" x1="378.5" stroke-width="1.5" stroke="#000000" fill="none"/>
+ </g>
+</svg>
