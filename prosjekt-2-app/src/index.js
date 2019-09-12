@@ -2,29 +2,29 @@ import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import * as serviceWorker from './serviceWorker';
-import CheckboxSection from './components/molecules/checkboxSection/CheckboxSection'
-
+// import CheckboxSection from './components/molecules/checkboxSection/CheckboxSection'
+import MainPage from './components/organisms/MainPage/MainPage'
 const category = ['fisk', 'eple'];
 
 
 class App extends React.Component{
   constructor(props) {
     super(props);
-    this.state = {selected: null};
+    this.state = {selectedTab: null};
   }
 
-  setSelected(sel){
-    this.setState(({selected: sel}))
+  componentDidMount(){
+    this.setState(({selectedTab: category[0]}))
+  }
+
+  setSelectedTab(sel){
+    this.setState(({selectedTab: sel}))
   };
 
   render(){
   return (
     <div>
-      <header>
-        <p>This will be the main page where everything will be placed.</p>
-      </header>
-      <p>Example of react radio buttons:</p>
-      <CheckboxSection category={category} setSelected={this.setSelected.bind(this)} selected={this.state.selected}/>
+      <MainPage category={category} setSelectedTab={this.setSelectedTab.bind(this)} selectedTab={this.state.selectedTab} />
     </div>
   );
   }
