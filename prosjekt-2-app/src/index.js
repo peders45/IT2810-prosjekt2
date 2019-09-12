@@ -10,17 +10,21 @@ const category = ['fisk', 'eple'];
 class App extends React.Component{
   constructor(props) {
     super(props);
-    this.state = {selected: null};
+    this.state = {selectedTab: null};
+  }
+
+  componentDidMount(){
+    this.setState(({selectedTab: category[0]}))
   }
 
   setSelectedTab(sel){
-    this.setState(({selected: sel}))
+    this.setState(({selectedTab: sel}))
   };
 
   render(){
   return (
     <div>
-      <MainPage category={category} setSelectedTab={this.setSelectedTab.bind(this)} selected={this.state.selected} />
+      <MainPage category={category} setSelectedTab={this.setSelectedTab.bind(this)} selectedTab={this.state.selectedTab} />
     </div>
   );
   }
