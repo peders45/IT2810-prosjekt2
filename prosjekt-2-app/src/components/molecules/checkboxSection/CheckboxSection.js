@@ -4,10 +4,10 @@ import './CheckboxSection.css'
 
 const CheckboxSection = ({ category, setSelected, selected }) => {
     return(
-        <ul>
-            {category.map(cat => {
+        <ul className="checkboxSection">
+            {category.map((cat, i) => {
                 return(
-                <li>
+                <li key={"C" + i}>
                    <CategoryButton setSelected={setSelected} selected={selected} >{cat}</CategoryButton>
                 </li>);
             })}
