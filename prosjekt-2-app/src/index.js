@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import * as serviceWorker from './serviceWorker';
 // import CheckboxSection from './components/molecules/checkboxSection/CheckboxSection'
-import MainPage from './components/organisms/MainPage/MainPage'
+import MainPage from './components/organisms/MainPage/MainPage';
 const category = ['fisk', 'eple'];
 
 
