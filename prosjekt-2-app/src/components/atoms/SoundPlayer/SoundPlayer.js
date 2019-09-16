@@ -1,19 +1,14 @@
 import React from 'react';
-import Sound from 'react-sound';
-import soundfile from '../SoundPlayer/cool_sound.mp3';
+import AudioPlayer from "react-modular-audio-player";
+//import soundfile from '../SoundPlayer/coolsound.mp3';
 
-const SoundPlayer = () => {
+const SoundPlayer = ({selectedSound}) => {
     return(
         <div>
-          <Sound
-            url={soundfile}
-            playStatus={Sound.status.STOPPED}
-            allow={'autoplay'}
-            autoLoad={true}
-            loop={true}
-            onLoading={Sound.handleSongLoading}
-            onPlaying={Sound.handleSongPlaying}
-            onFinishedPlaying={Sound.handleSongFinishedPlaying} />
+          <audio controls autoplay preload="auto">
+            <source src='${selectedSound}' type="audio/waw" />
+            Your browser does not support the audio element.
+          </audio>
         </div>
     );
 }
