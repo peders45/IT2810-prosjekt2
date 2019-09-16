@@ -1,4 +1,4 @@
-ul{
+.checkboxSection{
     display: flex;
     flex-direction: column;
     list-style-type: none;

@@ -1,5 +1,6 @@
 import React from 'react';
 import CheckboxSection from '../../molecules/CheckboxSection/CheckboxSection';
+import './SelectorSection.css'
 
 const SelectorSection = ({ 
     mediaCategories, 
@@ -11,7 +12,7 @@ const SelectorSection = ({
     selectedText
 }) => {
     return(
-        <ul>
+        <ul className='selectorSection'>
         {mediaCategories.map((media, i) => {
             let setSelected = null
             let selected = null

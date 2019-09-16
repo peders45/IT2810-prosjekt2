@@ -4,7 +4,7 @@ import './CheckboxSection.css'
 
 const CheckboxSection = ({ category, setSelected, selected }) => {
     return(
-        <ul>
+        <ul className="checkboxSection">
             {category.map((cat, i) => {
                 return(
                 <li key={"C" + i}>
