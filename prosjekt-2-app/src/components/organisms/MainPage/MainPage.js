@@ -14,7 +14,7 @@ const MainPage = ({ category, selectedTab, setSelectedTab, mediaCategories, setS
     return(
         <div>
             <TabList setSelectedTab={setSelectedTab} selectedTab={selectedTab} category={category}/>
-            <DisplaySection selectedTab={selectedTab}/>
+            <DisplaySection selectedTab={selectedTab} selectedText={selectedText}/>
             <SelectorSection
                 mediaCategories={mediaCategories}
                 selectedSound={selectedSound}

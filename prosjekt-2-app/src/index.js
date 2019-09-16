@@ -2,16 +2,15 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import * as serviceWorker from './serviceWorker';
-// import CheckboxSection from './components/molecules/checkboxSection/CheckboxSection'
 import MainPage from './components/organisms/MainPage/MainPage';
-const category = ['fisk', 'eple'];
-const mediaCategories = [{ type: 'Bilde', categories: ['Minimalistisk', 'Naturlig', 'Abstrakt']},{ type: 'Lyd', categories: ['Opphold', 'Regn', 'Storm']}, { type: 'Tekst', categories: ['Dikt', 'Haiku', 'Sangtekst']} ]
 
 
 class App extends React.Component{
   constructor(props) {
     super(props);
     this.state = {
+      category: ['Fjell', 'Sjø', 'By', 'Skog'],
+      mediaCategories: [{ type: 'Bilde', categories: ['Minimalistisk', 'Naturlig', 'Abstrakt']},{ type: 'Lyd', categories: ['Opphold', 'Regn', 'Storm']}, { type: 'Tekst', categories: ['Dikt', 'Haiku', 'Sangtekst']} ],
       selectedTab: null,
       media: {
         image: null,
@@ -22,7 +21,7 @@ class App extends React.Component{
   }
 
   componentDidMount(){
-    this.setState({selectedTab: category[0]})
+    this.setState({selectedTab: this.state.category[0], media: {...this.state.media, sound:'Opphold', image:'Minimalistisk', text:'Dikt'}})
   }
 
   setSelectedTab(sel){
@@ -43,8 +42,8 @@ class App extends React.Component{
   return (
     <div>
       <MainPage
-      mediaCategories={mediaCategories}
-      category={category}
+      mediaCategories={this.state.mediaCategories}
+      category={this.state.category}
       setSelectedTab={this.setSelectedTab.bind(this)}
       selectedTab={this.state.selectedTab}
       selectedSound= {this.state.media.sound}
