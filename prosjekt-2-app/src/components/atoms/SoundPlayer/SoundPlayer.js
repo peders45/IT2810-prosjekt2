@@ -1,6 +1,4 @@
 import React from 'react';
-import AudioPlayer from "react-modular-audio-player";
-//import soundfile from '../SoundPlayer/coolsound.mp3';
 
 const SoundPlayer = ({selectedSound}) => {
     return(
