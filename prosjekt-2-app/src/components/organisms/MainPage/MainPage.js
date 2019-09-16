@@ -14,9 +14,9 @@ const MainPage = ({ category, selectedTab, setSelectedTab, mediaCategories, setS
     return(
         <div className="main-page">
           <div className="vertical-main">
-              <TabList setSelectedTab={setSelectedTab} selectedTab={selectedTab} category={category}/>
-              <DisplaySection selectedTab={selectedTab}/>
-            </div>
+            <TabList setSelectedTab={setSelectedTab} selectedTab={selectedTab} category={category}/>
+            <DisplaySection selectedTab={selectedTab} selectedText={selectedText}/>
+          </div>
             <SelectorSection
                 mediaCategories={mediaCategories}
                 selectedSound={selectedSound}
