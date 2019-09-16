@@ -2,7 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import * as serviceWorker from './serviceWorker';
-import MainPage from './components/organisms/MainPage/MainPage'
+// import CheckboxSection from './components/molecules/checkboxSection/CheckboxSection'
+import MainPage from './components/organisms/MainPage/MainPage';
 const category = ['fisk', 'eple'];
 const mediaCategories = [{ type: 'Bilde', categories: ['Minimalistisk', 'Naturlig', 'Abstrakt']},{ type: 'Lyd', categories: ['Opphold', 'Regn', 'Storm']}, { type: 'Tekst', categories: ['Dikt', 'Haiku', 'Sangtekst']} ]
 
@@ -41,16 +42,16 @@ class App extends React.Component{
   render(){
   return (
     <div>
-      <MainPage 
-      mediaCategories={mediaCategories} 
-      category={category} 
-      setSelectedTab={this.setSelectedTab.bind(this)} 
-      selectedTab={this.state.selectedTab} 
-      selectedSound= {this.state.media.sound} 
-      selectedImage= {this.state.media.image} 
+      <MainPage
+      mediaCategories={mediaCategories}
+      category={category}
+      setSelectedTab={this.setSelectedTab.bind(this)}
+      selectedTab={this.state.selectedTab}
+      selectedSound= {this.state.media.sound}
+      selectedImage= {this.state.media.image}
       selectedText= {this.state.media.text}
-      setSelectedSound= {this.setSelectedSound.bind(this)} 
-      setSelectedImage= {this.setSelectedImage.bind(this)} 
+      setSelectedSound= {this.setSelectedSound.bind(this)}
+      setSelectedImage= {this.setSelectedImage.bind(this)}
       setSelectedText= {this.setSelectedText.bind(this)}
       />
     </div>
