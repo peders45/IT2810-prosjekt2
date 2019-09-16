@@ -2,8 +2,8 @@ import React from 'react';
 import CheckboxSection from '../../molecules/CheckboxSection/CheckboxSection';
 import './SelectorSection.css'
 
-const SelectorSection = ({ 
-    mediaCategories, 
+const SelectorSection = ({
+    mediaCategories,
     setSelectedSound,
     setSelectedImage,
     setSelectedText,
@@ -34,9 +34,9 @@ const SelectorSection = ({
             return(
                 <li key={"M" + i} >
                 <h3>{media.type}</h3>
-                <CheckboxSection 
-                category={media.categories} 
-                setSelected={setSelected} 
+                <CheckboxSection
+                category={media.categories}
+                setSelected={setSelected}
                 selected={selected}
                 />
                 </li>
