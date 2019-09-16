@@ -1,6 +1,13 @@
 .tabList{
-    display: flex;
-    flex-direction: row;
-    list-style-type: none;
-    padding: 0;
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  justify-content: space-around;
+  background-color: white;
+  min-width: 50vw;
+  height: 50px;
+  margin-bottom: 1px;
+  margin-right: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
 }

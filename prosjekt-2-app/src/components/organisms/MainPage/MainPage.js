@@ -4,17 +4,19 @@ import DisplaySection from '../DisplaySection/DisplaySection'
 import SelectorSection from '../SelectorSection/SelectorSection'
 import './MainPage.css';
 
-const MainPage = ({ category, selectedTab, setSelectedTab, mediaCategories, setSelectedMedia, 
-    selectedSound, 
+const MainPage = ({ category, selectedTab, setSelectedTab, mediaCategories, setSelectedMedia,
+    selectedSound,
     selectedImage,
     selectedText,
     setSelectedSound,
     setSelectedImage,
     setSelectedText }) => {
     return(
-        <div>
-            <TabList setSelectedTab={setSelectedTab} selectedTab={selectedTab} category={category}/>
-            <DisplaySection selectedTab={selectedTab}/>
+        <div className="main-page">
+          <div className="vertical-main">
+              <TabList setSelectedTab={setSelectedTab} selectedTab={selectedTab} category={category}/>
+              <DisplaySection selectedTab={selectedTab}/>
+            </div>
             <SelectorSection
                 mediaCategories={mediaCategories}
                 selectedSound={selectedSound}

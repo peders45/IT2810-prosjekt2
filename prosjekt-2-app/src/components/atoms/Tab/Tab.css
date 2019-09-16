@@ -1,0 +1,23 @@
+.tab-button {
+  display: block;
+  padding: 10px;
+  margin: 2px;
+  margin-bottom: 0;
+  text-decoration: none;
+  font-family : 'arial';
+  width: 120px;
+  height: 50px;
+  background-color: #eee;
+  font-size: 22px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  border-bottom: none;
+}
+
+.tab-button:hover {
+  background-color: #ccc;
+}
+
+.tab-button:checked {
+  background-color: #5F9EA0;
+}
