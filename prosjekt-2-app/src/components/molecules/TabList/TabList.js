@@ -5,9 +5,9 @@ import './TabList.css'
 const TabList = ({ category, setSelectedTab, selectedTab }) => {
     return(
         <ul>
-            {category.map(cat => {
+            {category.map((cat, i) => {
                 return(
-                <li>
+                <li key={"t"+i}>
                    <Tab setSelectedTab={setSelectedTab} selectedTab={selectedTab} >{cat}</Tab>
                 </li>);
             })}
