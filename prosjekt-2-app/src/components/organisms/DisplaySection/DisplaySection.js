@@ -7,8 +7,10 @@ const DisplaySection = ({selectedTab, selectedText}) => {
     return(
         <div className="DisplaySection-container">
             <h1>{selectedTab}</h1>
-            <SoundPlayer />
-            <TextArea selectedText={selectedText} selectedTab={selectedTab}/>
+            <div className="text-sound">
+              <SoundPlayer />
+              <TextArea selectedText={selectedText} selectedTab={selectedTab}/>
+            </div>
         </div>
     );
 };

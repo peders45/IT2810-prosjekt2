@@ -1,4 +1,20 @@
 .DisplaySection-container {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 20px;
   border-style: solid;
   border-width: 1px;
+  min-height: 70vh;
+  min-width: 50vw;
+  margin-right: 30px;
+}
+
+.text-sound {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 20px;
+  margin-left: 60px;
 }
