@@ -1,7 +1,6 @@
 import React from 'react'
 import CategoryButton from '../../atoms/CategoryButton/CategoryButton'
 import './CheckboxSection.css'
-//fix
 
 const CheckboxSection = ({ category, setSelected, selected }) => {
     return(
