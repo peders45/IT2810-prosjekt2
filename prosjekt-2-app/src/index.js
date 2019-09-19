@@ -48,7 +48,12 @@ class App extends React.Component{
       const favTab = localStorage.getItem('favTab');
       const favText = localStorage.getItem('favText');
       const favImage = localStorage.getItem('favImage');
-      this.setState({selectedTab: favTab, media: {...this.state.media, text:favText, image:favImage}});
+
+      if (favTab === null) {
+          alert("Du har ikke valgt favoritt enda")
+      } else {
+          this.setState({selectedTab: favTab, media: {...this.state.media, text:favText, image:favImage}});
+      }
   }
 
   render(){
