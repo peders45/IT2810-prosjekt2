@@ -49,10 +49,10 @@ class App extends React.Component{
       const favText = localStorage.getItem('favText');
       const favImage = localStorage.getItem('favImage');
 
-      if (favTab === null) {
-          alert("Du har ikke valgt favoritt enda")
-      } else {
+      if (localStorage.length > 0) {
           this.setState({selectedTab: favTab, media: {...this.state.media, text:favText, image:favImage}});
+      } else {
+          alert("Du har ikke valgt favoritt enda")
       }
   }
 
@@ -72,6 +72,7 @@ class App extends React.Component{
       setSelectedText= {this.setSelectedText.bind(this)}
       onSaveFavourite={this.onSaveFavourite.bind(this)}
       onShowFavourite={this.onShowFavourite.bind(this)}
+      onPreviousDisplay={this.onPreviousDisplay}
       />
     </div>
   );
