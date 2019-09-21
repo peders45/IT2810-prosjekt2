@@ -3,8 +3,8 @@ import './HeaderSection.css'
 
 const HeaderSection = () => {
     return(
-        <div>
-            <h1>Header</h1>
+        <div className="header">
+            <h1>Kunstutstilling</h1>
         </div>
     );
 };
