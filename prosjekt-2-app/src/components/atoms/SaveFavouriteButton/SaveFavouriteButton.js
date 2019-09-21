@@ -1,8 +1,9 @@
 import React from 'react';
+import './SaveFavouriteButton.css';
 
 const SaveFavouriteButton = ({onSaveFavourite}) => {
     return(
-        <button onClick={onSaveFavourite}>Lagre din favoritt</button>
+        <button className="saveFavButton" onClick={onSaveFavourite}>Lagre din favoritt</button>
     );
 };
 

@@ -1,8 +1,9 @@
 import React from 'react';
+import './ShowFavouriteButton.css';
 
 const ShowFavouriteButton = ({onShowFavourite}) => {
     return(
-        <button onClick={onShowFavourite}>Vis din favoritt</button>
+        <button className="showFavButton" onClick={onShowFavourite}>Vis din favoritt</button>
     );
 };
 

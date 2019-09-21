@@ -18,11 +18,10 @@ const MainPage = ({ category, selectedTab, setSelectedTab, mediaCategories, setS
     return(
         <div className="main-page">
           <div className="vertical-main">
-            <SaveFavouriteButton onSaveFavourite={onSaveFavourite} />
-            <ShowFavouriteButton onShowFavourite={onShowFavourite} />
             <TabList setSelectedTab={setSelectedTab} selectedTab={selectedTab} category={category}/>
             <DisplaySection selectedTab={selectedTab} selectedText={selectedText} selectedImage={selectedImage}/>
           </div>
+          <div className="vertical-main">
             <SelectorSection
                 mediaCategories={mediaCategories}
                 selectedSound={selectedSound}
@@ -32,6 +31,9 @@ const MainPage = ({ category, selectedTab, setSelectedTab, mediaCategories, setS
                 setSelectedImage={setSelectedImage}
                 setSelectedText={setSelectedText}
             />
+            <SaveFavouriteButton onSaveFavourite={onSaveFavourite} />
+            <ShowFavouriteButton onShowFavourite={onShowFavourite} />
+          </div>
         </div>
     );
 };
