@@ -5,12 +5,20 @@ const TextArea = ({selectedText, selectedTab}) => {
     const url = 'media/text/'+selectedTab+'/'+selectedText+'.json'
 
     useEffect(() => {
-        getTextSection();
+        const currentTextString = sessionStorage.getItem(selectedText + selectedTab);
+        if (currentTextString != null) {
+            const currentTextSection = JSON.parse(currentTextString)
+            setTextSection(currentTextSection);
+        } else {
+            getTextSection();
+        }
     }, [selectedText, selectedTab]);
-  
+
     async function getTextSection() {
       const response = await fetch(url);
       const textSection = await response.json();
+      const textSectionString = JSON.stringify(textSection);
+      sessionStorage.setItem(selectedText + selectedTab, textSectionString);
       setTextSection(textSection);
     }
 
