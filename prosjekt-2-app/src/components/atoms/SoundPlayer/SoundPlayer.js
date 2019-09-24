@@ -1,10 +1,14 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 
-const SoundPlayer = () => {
+const SoundPlayer = ({selectedSound, selectedTab}) => {
+  useEffect(() => {
+    document.getElementById('audioPlayer').setAttribute('src', 'media/wav/'+ selectedTab + '/' + selectedSound + '.wav');
+  }, [selectedSound, selectedTab])
+  
     return(
         <div>
-          <audio controls autoPlay preload="auto">
-            <source src="coolsound.mp3" type="audio/mpeg" />
+          <audio id='audioPlayer' controls autoPlay preload="auto">
+            <source src={ 'media/wav/'+ selectedTab + '/' + selectedSound + '.wav'} type="audio/wav" />
             Your browser does not support the audio element.
           </audio>
         </div>

@@ -4,12 +4,12 @@ import TextArea from '../../atoms/TextArea/TextArea'
 import ImageBox from '../../atoms/ImageBox/ImageBox'
 import './DisplaySection.css';
 
-const DisplaySection = ({selectedTab, selectedText, selectedImage}) => {
+const DisplaySection = ({selectedTab, selectedText, selectedImage, selectedSound}) => {
     return(
         <div className="DisplaySection-container">
             <h1>{selectedTab}</h1>
             <div className="text-sound">
-              <SoundPlayer />
+              <SoundPlayer selectedSound={selectedSound} selectedTab={selectedTab}/>
               <TextArea selectedText={selectedText} selectedTab={selectedTab}/>
               <ImageBox selectedImage={selectedImage} selectedTab={selectedTab}/>
             </div>
