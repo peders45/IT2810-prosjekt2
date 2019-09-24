@@ -17,6 +17,11 @@ label{
   user-select: none;
 }
 
+@media screen and (max-width: 1200px) {
+  .container{
+    font-size: 2vw; 
+  }
+}
 /* Hide the browser's default checkbox */
 .container input {
   position: absolute;

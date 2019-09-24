@@ -21,7 +21,7 @@ const ImageBox = ({selectedImage, selectedTab}) => {
     }
 
     return(
-        <div dangerouslySetInnerHTML={{__html: image}} />
+        <div className="svg-container" dangerouslySetInnerHTML={{__html: image}} />
     );
 };
 
