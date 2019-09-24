@@ -1,0 +1,15 @@
+.showFavButton {
+    background-color: #eee;
+    cursor: pointer;
+    font-size: 22px;
+    font-family : 'arial';
+    margin-top: 6px;
+}
+
+.showFavButton:hover {
+  background-color: #ccc;
+}
+
+.showFavButton:active {
+  background-color: #5F9EA0;
+}

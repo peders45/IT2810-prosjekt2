@@ -1,0 +1,15 @@
+.saveFavButton {
+    background-color: #eee;
+    cursor: pointer;
+    font-size: 22px;
+    font-family : 'arial';
+    margin-bottom: 6px;
+}
+
+.saveFavButton:hover {
+  background-color: #ccc;
+}
+
+.saveFavButton:active {
+  background-color: #5F9EA0;
+}

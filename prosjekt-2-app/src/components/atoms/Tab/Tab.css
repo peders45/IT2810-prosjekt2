@@ -12,12 +12,13 @@
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
   border-bottom: none;
+  cursor: pointer;
 }
 
 .tab-button:hover {
   background-color: #ccc;
 }
 
-.tab-button:checked {
+.tab-button:active {
   background-color: #5F9EA0;
 }
