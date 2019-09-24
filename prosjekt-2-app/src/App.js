@@ -39,13 +39,15 @@ class App extends React.Component{
     localStorage.setItem('favImage', this.state.media.image);
     localStorage.setItem('favTab', this.state.selectedTab);
     localStorage.setItem('favText', this.state.media.text);
+    localStorage.setItem('favSound', this.state.media.sound);
   }
 
   onShowFavourite(){
       const favTab = localStorage.getItem('favTab');
       const favText = localStorage.getItem('favText');
       const favImage = localStorage.getItem('favImage');
-      this.setState({selectedTab: favTab, media: {...this.state.media, text:favText, image:favImage}});
+      const favSound = localStorage.getItem('favSound');
+      this.setState({selectedTab: favTab, media: {...this.state.media, text:favText, image:favImage, sound:favSound}});
   }
 
   render(){
