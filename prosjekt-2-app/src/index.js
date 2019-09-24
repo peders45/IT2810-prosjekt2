@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import * as serviceWorker from './serviceWorker';
+import HeaderSection from './components/atoms/HeaderSection/HeaderSection'
 import MainPage from './components/organisms/MainPage/MainPage';
 
 
@@ -38,9 +39,28 @@ class App extends React.Component{
     this.setState({media: {...this.state.media, text:sel}})
   };
 
+  onSaveFavourite(){
+    localStorage.setItem('favImage', this.state.media.image);
+    localStorage.setItem('favTab', this.state.selectedTab);
+    localStorage.setItem('favText', this.state.media.text);
+  }
+
+  onShowFavourite(){
+      const favTab = localStorage.getItem('favTab');
+      const favText = localStorage.getItem('favText');
+      const favImage = localStorage.getItem('favImage');
+
+      if (localStorage.length > 0) {
+          this.setState({selectedTab: favTab, media: {...this.state.media, text:favText, image:favImage}});
+      } else {
+          alert("Du har ikke valgt favoritt enda")
+      }
+  }
+
   render(){
   return (
     <div>
+      <HeaderSection />
       <MainPage
       mediaCategories={this.state.mediaCategories}
       category={this.state.category}
@@ -52,6 +72,9 @@ class App extends React.Component{
       setSelectedSound= {this.setSelectedSound.bind(this)}
       setSelectedImage= {this.setSelectedImage.bind(this)}
       setSelectedText= {this.setSelectedText.bind(this)}
+      onSaveFavourite={this.onSaveFavourite.bind(this)}
+      onShowFavourite={this.onShowFavourite.bind(this)}
+      onPreviousDisplay={this.onPreviousDisplay}
       />
     </div>
   );
