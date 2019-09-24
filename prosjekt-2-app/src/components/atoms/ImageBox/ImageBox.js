@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from 'react';
 
+import './ImageBox.css'
+
 const ImageBox = ({selectedImage, selectedTab}) => {
     const [image, setImage] = useState([]);
     const url = 'media/svg/'+selectedTab+'/'+selectedImage+'.svg';
