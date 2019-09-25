@@ -3,15 +3,14 @@ import './Tab.css'
 
 const Tab = ({ children, selectedTab, setSelectedTab}) => {
     return(
-        <div>
-            <button
-                className="tab-button"
-                type="Button"
+        <label className="tab-container">
+            <input className="tab-checkbox"
+                type="radio"
                 checked={selectedTab === children}
-                onClick={() => setSelectedTab(children)}
-            > {children} </button>
-
-        </div>
+                onChange={() => setSelectedTab(children)}
+            />
+            <div className="tab-button">{children}</div>
+        </label>
     );
 };
 
