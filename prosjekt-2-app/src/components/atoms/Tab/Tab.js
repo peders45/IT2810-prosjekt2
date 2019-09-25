@@ -1,13 +1,13 @@
 import React from 'react';
 import './Tab.css'
 
-const Tab = ({ children, selected, setSelectedTab}) => {
+const Tab = ({ children, selectedTab, setSelectedTab}) => {
     return(
         <div>
             <button
                 className="tab-button"
                 type="Button"
-                checked={selected === children}
+                checked={selectedTab === children}
                 onClick={() => setSelectedTab(children)}
             > {children} </button>
 
