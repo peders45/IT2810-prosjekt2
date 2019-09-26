@@ -19,7 +19,8 @@ label{
 
 @media screen and (max-width: 800px) {
   .container{
-    font-size: 2vw;
+    padding-left: 25px;
+    font-size: 4vw;
   }
 }
 /* Hide the browser's default checkbox */
