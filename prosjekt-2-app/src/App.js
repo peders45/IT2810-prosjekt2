@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import HeaderSection from './components/atoms/HeaderSection/HeaderSection'
 import MainPage from './components/organisms/MainPage/MainPage';
 
 class App extends React.Component{
@@ -53,6 +54,7 @@ class App extends React.Component{
   render(){
   return (
     <div>
+      <HeaderSection />
       <MainPage
       mediaCategories={this.state.mediaCategories}
       category={this.state.category}
