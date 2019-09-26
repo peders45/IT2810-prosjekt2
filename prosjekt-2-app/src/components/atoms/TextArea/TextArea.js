@@ -1,5 +1,8 @@
 import React, { useEffect, useState } from 'react';
 
+//Functional component for showing images
+//Takes in the selected text and selected tab as props
+//The prop makes up the end part path of the text to be shown which is fetched as json using ajax
 const TextArea = ({selectedText, selectedTab}) => {
     const [textSection, setTextSection] = useState([]);
     const url = selectedText && selectedTab ? 'media/text/'+selectedTab+'/'+selectedText+'.json' : null;

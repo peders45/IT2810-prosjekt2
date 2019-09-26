@@ -2,6 +2,9 @@ import React, { useEffect, useState } from 'react';
 
 import './ImageBox.css'
 
+//Functional component for showing images
+//Takes in the selected image and selected tab as props
+//The prop makes up the end part path of the image to be shown which is fetched as xml using ajax
 const ImageBox = ({selectedImage, selectedTab}) => {
     const [image, setImage] = useState([]);
     const url = 'media/svg/'+selectedTab+'/'+selectedImage+'.svg';

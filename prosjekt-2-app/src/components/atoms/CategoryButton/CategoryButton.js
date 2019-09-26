@@ -1,6 +1,8 @@
 import React from 'react'
 import './CategoryButton.css'
 
+//Functional radio-button component for selecting media
+//Takes in the selected media, function for setting selected media and name (children) as props
 const CategoryButton = ({ children, selected, setSelected}) => {
     return(
         <label className="container">

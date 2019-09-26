@@ -4,6 +4,8 @@ import TextArea from '../../atoms/TextArea/TextArea';
 import ImageBox from '../../atoms/ImageBox/ImageBox';
 import './DisplaySection.css';
 
+//Functional component combining all the artwork (text, images and sound) to be displayed by using their respective components
+//Takes in the neccesary props and passing them to the components requiring those props
 const DisplaySection = ({
   selectedTab,
   selectedText,

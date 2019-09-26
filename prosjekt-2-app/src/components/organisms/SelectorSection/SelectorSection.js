@@ -2,6 +2,8 @@ import React from 'react';
 import CheckboxSection from '../../molecules/CheckboxSection/CheckboxSection';
 import './SelectorSection.css'
 
+//Functional component combining all the media selectors into one component of selectors
+//Takes in the neccesary props and passing them to the components requiring those props
 const SelectorSection = ({
     mediaCategories,
     setSelectedSound,

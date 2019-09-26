@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import HeaderSection from './components/atoms/HeaderSection/HeaderSection'
 import MainPage from './components/organisms/MainPage/MainPage';
 
+//Main App class component managing state and functions for modifying state as well ass pasing props to components down the component tree.
 class App extends React.Component{
   constructor(props) {
     super(props);
@@ -18,6 +19,8 @@ class App extends React.Component{
     };
   }
 
+  //Lifecycle hook for setting the default state based on the media categories and tabs
+  //This is made so that the component in the future could fetch data and set it in the state instead of hard coding it.
   componentDidMount(){
     this.setState({selectedTab: this.state.category[0], media: {...this.state.media, sound:'Opphold', image:'Minimalistisk', text:'Dikt'}})
   }
