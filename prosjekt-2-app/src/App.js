@@ -1,5 +1,4 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 import HeaderSection from './components/atoms/HeaderSection/HeaderSection'
 import MainPage from './components/organisms/MainPage/MainPage';
 
