@@ -14,12 +14,12 @@ const DisplaySection = ({
     <div className="DisplaySection-wrapper">
       <div className="DisplaySection-container">
         <div className="text-sound">
+          <ImageBox selectedImage={selectedImage} selectedTab={selectedTab} />
           <SoundPlayer
             selectedSound={selectedSound}
             selectedTab={selectedTab}
           />
           <TextArea selectedText={selectedText} selectedTab={selectedTab} />
-          <ImageBox selectedImage={selectedImage} selectedTab={selectedTab} />
         </div>
       </div>
     </div>
