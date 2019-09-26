@@ -17,7 +17,7 @@ label{
   user-select: none;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 800px) {
   .container{
     font-size: 2vw;
   }
