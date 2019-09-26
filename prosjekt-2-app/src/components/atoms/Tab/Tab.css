@@ -6,7 +6,7 @@
   font-family : 'arial';
   width: 90px;
   height: 50px;
-  background-color: #eee;
+  background-color: #eff5f5;
   font-size: 22px;
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
@@ -31,7 +31,7 @@
 
 /* Endre farge ved mouse-over på eget klikk-element */
 .tab-button:hover {
-  background-color: #ccc;
+  background-color: #8fbbbc;
 }
 
 /* Endre farge ved aktivering av eget klikk-element */
