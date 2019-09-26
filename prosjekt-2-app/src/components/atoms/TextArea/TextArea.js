@@ -8,6 +8,15 @@ const TextArea = ({selectedText, selectedTab}) => {
     const url = selectedText && selectedTab ? 'media/text/'+selectedTab+'/'+selectedText+'.json' : null;
 
     useEffect(() => {
+
+        async function getTextSection() {
+            const response = await fetch(url);
+            const textSection = await response.json();
+            const textSectionString = JSON.stringify(textSection);
+            sessionStorage.setItem(selectedText + selectedTab, textSectionString);
+            setTextSection(textSection);
+          }
+
         if(url){
         const currentTextString = sessionStorage.getItem(selectedText + selectedTab);
         if (currentTextString != null) {
@@ -17,15 +26,8 @@ const TextArea = ({selectedText, selectedTab}) => {
             getTextSection();
         }
     }
-    }, [selectedText, selectedTab]);
+    }, [selectedText, selectedTab, url]);
 
-    async function getTextSection() {
-      const response = await fetch(url);
-      const textSection = await response.json();
-      const textSectionString = JSON.stringify(textSection);
-      sessionStorage.setItem(selectedText + selectedTab, textSectionString);
-      setTextSection(textSection);
-    }
 
     return(
         <div>

@@ -11,19 +11,21 @@ const ImageBox = ({selectedImage, selectedTab}) => {
 
     useEffect(() => {
         const currentImage = sessionStorage.getItem(selectedImage + selectedTab);
+
+        async function getImage() {
+            const response = await fetch(url);
+            const image = await response.text();
+            sessionStorage.setItem(selectedImage + selectedTab, image);
+            setImage(image);
+        }
+
         if (currentImage != null) {
             setImage(currentImage);
         } else {
             getImage();
         }
-    }, [selectedImage, selectedTab]);
+    }, [selectedImage, selectedTab, url]);
 
-    async function getImage() {
-        const response = await fetch(url);
-        const image = await response.text();
-        sessionStorage.setItem(selectedImage + selectedTab, image);
-        setImage(image);
-    }
 
     return(
         <div className="svg-container" dangerouslySetInnerHTML={{__html: image}} />
