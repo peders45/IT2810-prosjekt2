@@ -6,12 +6,13 @@ import SaveFavouriteButton from '../../atoms/SaveFavouriteButton/SaveFavouriteBu
 import ShowFavouriteButton from '../../atoms/ShowFavouriteButton/ShowFavouriteButton';
 import './MainPage.css';
 
+//Functional component combining all the page contnent using their respective components
+//Takes in the neccesary props and passing them to the components requiring those props
 const MainPage = ({
   category,
   selectedTab,
   setSelectedTab,
   mediaCategories,
-  setSelectedMedia,
   selectedSound,
   selectedImage,
   selectedText,

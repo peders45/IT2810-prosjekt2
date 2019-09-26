@@ -22,10 +22,10 @@
   background-color: #5F9EA0;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 800px) {
   .showFavButton{
-    max-width: 20vw;
+    width: 30vw;
     max-height: 10vh;
-    font-size: 2vw;
+    font-size: 3.5vw;
   }
 }

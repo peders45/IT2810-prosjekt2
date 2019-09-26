@@ -6,10 +6,12 @@
   margin-top: 70px;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 800px) {
   .selectorSection {
     flex-direction: row;
+    justify-content: space-evenly;
     padding-right: 4vw;
     padding-left: 4vw;
+    margin-top: 10px;
   }
 }

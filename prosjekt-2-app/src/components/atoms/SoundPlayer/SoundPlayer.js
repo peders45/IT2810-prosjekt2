@@ -2,6 +2,10 @@ import React, { useEffect } from 'react';
 
 import './SoundPlayer.css'
 
+
+//Functional component for playing sound
+//Takes in selected sound and selected tab as props
+//Combined selected sound and selected tab will giv the end path of the file to be played which is shown in the setAttribute method
 const SoundPlayer = ({selectedSound, selectedTab}) => {
   useEffect(() => {
     if (selectedSound && selectedTab){
