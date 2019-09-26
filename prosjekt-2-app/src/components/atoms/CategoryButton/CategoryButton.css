@@ -17,6 +17,11 @@ label{
   user-select: none;
 }
 
+@media screen and (max-width: 1200px) {
+  .container{
+    font-size: 2vw; 
+  }
+}
 /* Hide the browser's default checkbox */
 .container input {
   position: absolute;
@@ -35,6 +40,7 @@ label{
   width: 25px;
   background-color: #eee;
 }
+
 
 /* On mouse-over, add a grey background color */
 .container:hover input ~ .checkmark {
@@ -69,4 +75,22 @@ label{
   -webkit-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
+}
+
+@media screen and (max-width: 650px) {
+  .container .checkmark:after {
+    left: 7px;
+    top: 3px;
+    width: 3px;
+    height: 8px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+  .checkmark {
+    height: 18px;
+    width: 18px;
+  }
 }

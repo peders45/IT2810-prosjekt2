@@ -4,6 +4,7 @@
     font-size: 22px;
     font-family : 'arial';
     margin-top: 6px;
+    margin: 2px;
 }
 
 .showFavButton:hover {
@@ -12,4 +13,12 @@
 
 .showFavButton:active {
   background-color: #5F9EA0;
+}
+
+@media screen and (max-width: 1000px) {
+  .showFavButton{
+    max-width: 20vw;
+    max-height: 10vh;
+    font-size: 2vw;
+  }
 }
