@@ -1,8 +1,7 @@
+/* Lage eget klikk-element som erstatter default checkbox */
 .tab-button {
   display: block;
-  padding: 10px;
-  margin: 2px;
-  margin-bottom: 0;
+  padding-bottom: 2px;
   text-decoration: none;
   font-family : 'arial';
   width: 110px;
@@ -13,20 +12,40 @@
   border-top-right-radius: 8px;
   border-bottom: none;
   cursor: pointer;
+  text-align: center;
+  line-height: 55px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
+/* Skjule default checkbox */
+.tab-checkbox {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+/* Endre farge ved mouse-over på eget klikk-element */
 .tab-button:hover {
   background-color: #ccc;
 }
 
+/* Endre farge ved aktivering av eget klikk-element */
 .tab-button:active {
+  background-color: #5F9EA0;
+}
+
+/* Endre farge ved klikk på eget klikk-element */
+.tab-checkbox:checked + .tab-button {
   background-color: #5F9EA0;
 }
 
 @media screen and (max-width: 700px) {
   .tab-button {
-    padding: 10px;
-    margin: 2px;
     margin-bottom: 0;
     width: 20vw;
     height: 50px;

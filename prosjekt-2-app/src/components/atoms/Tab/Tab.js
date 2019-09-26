@@ -1,17 +1,16 @@
 import React from 'react';
 import './Tab.css'
 
-const Tab = ({ children, selected, setSelectedTab}) => {
+const Tab = ({ children, selectedTab, setSelectedTab}) => {
     return(
-        <div>
-            <button
-                className="tab-button"
-                type="Button"
-                checked={selected === children}
-                onClick={() => setSelectedTab(children)}
-            > {children} </button>
-
-        </div>
+        <label className="tab-container">
+            <input className="tab-checkbox"
+                type="radio"
+                checked={selectedTab === children}
+                onChange={() => setSelectedTab(children)}
+            />
+            <div className="tab-button">{children}</div>
+        </label>
     );
 };
 
