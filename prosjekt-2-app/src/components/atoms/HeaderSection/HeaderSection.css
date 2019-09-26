@@ -1,6 +1,6 @@
 .header {
     display: flex;
     flex-direction: column;
-    width: auto;
+    width: 100vw;
     text-align: center;
 }
