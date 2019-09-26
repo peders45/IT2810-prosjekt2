@@ -42,10 +42,10 @@
 /* Endre farge ved klikk på eget klikk-element */
 .tab-checkbox:checked + .tab-button {
   background-color: #5F9EA0;
+}
+
 @media screen and (max-width: 700px) {
   .tab-button {
-    padding: 10px;
-    margin: 2px;
     margin-bottom: 0;
     width: 20vw;
     height: 50px;
