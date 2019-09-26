@@ -4,9 +4,10 @@ import './SoundPlayer.css'
 
 const SoundPlayer = ({selectedSound, selectedTab}) => {
   useEffect(() => {
+    if (selectedSound && selectedTab){
     document.getElementById('audioPlayer').setAttribute('src', 'media/sound/'+ selectedTab + '/' + selectedSound + '.mp3');
-  }, [selectedSound, selectedTab])
-  
+  }}, [selectedSound, selectedTab])
+
     return(
         <div>
           <audio className='audioPlayer' id='audioPlayer' controls autoPlay preload="auto">

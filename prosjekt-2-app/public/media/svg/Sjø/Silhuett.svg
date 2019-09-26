@@ -1,0 +1,15 @@
+<svg width="580" height="400" xmlns="http://www.w3.org/2000/svg">
+ <!-- Created with Method Draw - http://github.com/duopixel/Method-Draw/ -->
+ <g>
+  <title>background</title>
+  <rect fill="#fff" id="canvas_background" height="402" width="582" y="-1" x="-1"/>
+ </g>
+ <g>
+  <title>Layer 1</title>
+  <rect stroke="#000" id="svg_3" height="58" width="647.999995" y="346.5" x="-20.499998" fill-opacity="null" stroke-opacity="null" stroke-width="1.5" fill="#000000"/>
+  <path stroke="#000" id="svg_4" d="m0,305.108175c51.000004,-31.547731 101.999997,31.547728 152.999991,0l0,56.785905c-50.999994,31.547733 -101.999987,-31.547725 -152.999991,0l0,-56.785905z" fill-opacity="null" stroke-opacity="null" stroke-width="1.5" fill="#000000"/>
+  <path id="svg_5" d="m153,305.436371c50.000008,-28.603286 100.000006,28.603284 150.000004,0l0,51.485907c-49.999998,28.603289 -99.999996,-28.603282 -150.000004,0l0,-51.485907z" fill-opacity="null" stroke-opacity="null" stroke-width="1.5" stroke="#000" fill="#000000"/>
+  <path id="svg_6" d="m302,305.322447c57.333339,-35.754094 114.666666,35.754091 171.999994,0l0,64.357358c-57.333327,35.754097 -114.666655,-35.754088 -171.999994,0l0,-64.357358z" fill-opacity="null" stroke-opacity="null" stroke-width="1.5" stroke="#000" fill="#000000"/>
+  <path stroke="#000" id="svg_7" d="m472,306.772475c38.000004,-26.92073 76,26.920727 113.999997,0l0,48.457305c-37.999996,26.920732 -75.999993,-26.920725 -113.999997,0l0,-48.457305z" fill-opacity="null" stroke-opacity="null" stroke-width="1.5" fill="#000000"/>
+ </g>
+</svg>

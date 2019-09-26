@@ -3,6 +3,13 @@
 exports[`renders correctly 1`] = `
 <div>
   <div
+    className="header"
+  >
+    <h1>
+      Kunstutstilling
+    </h1>
+  </div>
+  <div
     className="main-page"
   >
     <div
@@ -12,96 +19,112 @@ exports[`renders correctly 1`] = `
         className="tabList"
       >
         <li>
-          <div>
-            <button
-              checked={false}
+          <label
+            className="tab-container"
+          >
+            <input
+              checked={true}
+              className="tab-checkbox"
+              onChange={[Function]}
+              type="radio"
+            />
+            <div
               className="tab-button"
-              onClick={[Function]}
-              type="Button"
             >
-               
               Fjell
-               
-            </button>
-          </div>
+            </div>
+          </label>
         </li>
         <li>
-          <div>
-            <button
+          <label
+            className="tab-container"
+          >
+            <input
               checked={false}
+              className="tab-checkbox"
+              onChange={[Function]}
+              type="radio"
+            />
+            <div
               className="tab-button"
-              onClick={[Function]}
-              type="Button"
             >
-               
               Sjø
-               
-            </button>
-          </div>
+            </div>
+          </label>
         </li>
         <li>
-          <div>
-            <button
+          <label
+            className="tab-container"
+          >
+            <input
               checked={false}
+              className="tab-checkbox"
+              onChange={[Function]}
+              type="radio"
+            />
+            <div
               className="tab-button"
-              onClick={[Function]}
-              type="Button"
             >
-               
               By
-               
-            </button>
-          </div>
+            </div>
+          </label>
         </li>
         <li>
-          <div>
-            <button
+          <label
+            className="tab-container"
+          >
+            <input
               checked={false}
+              className="tab-checkbox"
+              onChange={[Function]}
+              type="radio"
+            />
+            <div
               className="tab-button"
-              onClick={[Function]}
-              type="Button"
             >
-               
               Skog
-               
-            </button>
-          </div>
+            </div>
+          </label>
         </li>
       </ul>
       <div
-        className="DisplaySection-container"
+        className="DisplaySection-wrapper"
       >
-        <h1>
-          Fjell
-        </h1>
         <div
-          className="text-sound"
+          className="DisplaySection-container"
         >
-          <div>
-            <audio
-              autoPlay={true}
-              controls={true}
-              preload="auto"
-            >
-              <source
-                src="coolsound.mp3"
-                type="audio/mpeg"
-              />
-              Your browser does not support the audio element.
-            </audio>
-          </div>
-          <div>
-            <p>
-              Text is loading...
-            </p>
-          </div>
           <div
-            dangerouslySetInnerHTML={
-              Object {
-                "__html": Array [],
+            className="text-sound"
+          >
+            <div
+              className="svg-container"
+              dangerouslySetInnerHTML={
+                Object {
+                  "__html": Array [],
+                }
               }
-            }
-          />
+            />
+            <div>
+              <audio
+                autoPlay={true}
+                className="audioPlayer"
+                controls={true}
+                id="audioPlayer"
+                preload="auto"
+              >
+                <source
+                  src="media/sound/Fjell/Opphold.mp3"
+                  type="audio/mpeg"
+                />
+                Your browser does not support the audio element.
+              </audio>
+            </div>
+            <div>
+              <p>
+                Text is loading...
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -150,7 +173,7 @@ exports[`renders correctly 1`] = `
                   className="checkmark"
                 />
                 <div>
-                  Naturlig
+                  Silhuett
                 </div>
               </label>
             </li>
@@ -301,18 +324,22 @@ exports[`renders correctly 1`] = `
           </ul>
         </li>
       </ul>
-      <button
-        className="saveFavButton"
-        onClick={[Function]}
+      <div
+        className="storage-buttons"
       >
-        Lagre din favoritt
-      </button>
-      <button
-        className="showFavButton"
-        onClick={[Function]}
-      >
-        Vis din favoritt
-      </button>
+        <button
+          className="saveFavButton"
+          onClick={[Function]}
+        >
+          Lagre din favoritt
+        </button>
+        <button
+          className="showFavButton"
+          onClick={[Function]}
+        >
+          Vis din favoritt
+        </button>
+      </div>
     </div>
   </div>
 </div>

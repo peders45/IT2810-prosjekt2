@@ -8,7 +8,7 @@ class App extends React.Component{
     super(props);
     this.state = {
       category: ['Fjell', 'Sjø', 'By', 'Skog'],
-      mediaCategories: [{ type: 'Bilde', categories: ['Minimalistisk', 'Naturlig', 'Abstrakt']},{ type: 'Lyd', categories: ['Opphold', 'Regn', 'Storm']}, { type: 'Tekst', categories: ['Dikt', 'Haiku', 'Sangtekst']} ],
+      mediaCategories: [{ type: 'Bilde', categories: ['Minimalistisk', 'Silhuett', 'Abstrakt']},{ type: 'Lyd', categories: ['Opphold', 'Regn', 'Storm']}, { type: 'Tekst', categories: ['Dikt', 'Haiku', 'Sangtekst']} ],
       selectedTab: null,
       media: {
         image: null,
